@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Koppen */
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+/* Links */
+a {
+    color: #EF233C;
+    text-decoration: none;
+}
+
+
+header,
+footer {
+    background-color: #2B2D42;
+    color: #8D99AE;
+    padding: 30px;
+}
+
+
+header {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+
+header h1,
+header h2,
+footer h2 {
+    color: #EDF2F4;
+    margin: 0;
+}
+
+header p,
+footer p {
+    margin: 0;
+}
+
+.education {
+    background-color: #8D99AE;
+    padding: 30px;
+}

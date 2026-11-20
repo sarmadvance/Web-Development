@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem ipsum kolommen</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .columns {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .columns::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="columns">
+        <section class="column">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                imperdiet gravida felis a laoreet. Vivamus aliquet tortor nec lacus
+                sodales, at rutrum erat sagittis. Etiam ante sapien, maximus a mi
+                placerat, vestibulum malesuada est. Aliquam erat volutpat. Praesent
+                ullamcorper vulputate luctus. Quisque imperdiet iaculis felis ut
+                hendrerit. Sed scelerisque diam ac sapien luctus consequat.
+            </p>
+            <p>
+                Suspendisse auctor ipsum non eros tincidunt tempus. Mauris sit amet mi
+                sit amet erat posuere facilisis suscipit a dolor. Cras pellentesque
+                velit magna, eu bibendum libero pulvinar ut. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis
+                at eximod velit. Fusce tincidunt laoreet turpis, ac rutrum tellus
+                porttitor vitae.
+            </p>
+        </section>
+
+        <section class="column">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                imperdiet gravida felis a laoreet. Vivamus aliquet tortor nec lacus
+                sodales, at rutrum erat sagittis. Etiam ante sapien, maximus a mi
+                placerat, vestibulum malesuada est. Aliquam erat volutpat. Praesent
+                ullamcorper vulputate luctus. Quisque imperdiet iaculis felis ut
+                hendrerit. Sed scelerisque diam ac sapien luctus consequat.
+            </p>
+            <p>
+                Suspendisse auctor ipsum non eros tincidunt tempus. Mauris sit amet mi
+                sit amet erat posuere facilisis suscipit a dolor. Cras pellentesque
+                velit magna, eu bibendum libero pulvinar ut. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis
+                at eximod velit. Fusce tincidunt laoreet turpis, ac rutrum tellus
+                porttitor vitae.
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>

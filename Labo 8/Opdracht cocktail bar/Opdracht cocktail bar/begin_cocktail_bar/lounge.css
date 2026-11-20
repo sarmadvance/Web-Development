@@ -1,0 +1,111 @@
+/* Algemene reset en boxmodel */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #444;
+    background-color: #fff;
+}
+
+/* De site gebruikt 95% van de canvas en is gecentreerd */
+#wrapper {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden; /* bevat de floats */
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    margin: 0;
+}
+
+#imgHeader {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hoofdinhoud: 70% */
+#content {
+    float: left;
+    width: 70%;
+    padding: 20px 30px 20px 20px;
+}
+
+/* Weekly Specials: rest van de breedte */
+#elixirs {
+    float: right;
+    width: 30%;
+    padding: 20px;
+}
+
+/* Algemene titels */
+h1 {
+    color: #007e7e;
+    font-size: 150%;
+}
+
+h2 {
+    color: #007e7e;
+    font-size: 130%;
+}
+
+/* Titels binnen Weekly Specials: elk een andere kleur */
+#elixirs h1 {
+    color: #8B4513; /* bruin */
+}
+
+#elixirs h2:nth-of-type(1) {
+    color: #B22222; /* vuurrood */
+}
+
+#elixirs h2:nth-of-type(2) {
+    color: #2E8B57; /* zeegroen */
+}
+
+#elixirs h2:nth-of-type(3) {
+    color: #4B0082; /* indigo */
+}
+
+/* Links in Weekly Specials: bruine achtergrond bij hover */
+#elixirs a:hover {
+    background-color: #8B4513;
+    color: #fff;
+}
+
+/* Afbeeldingen in de zijbalk netjes weergeven */
+#elixirs img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+/* Het uitgelichte citaatblok */
+#guarantee {
+    margin: 30px;
+    padding: 20px;
+    color: rgb(68, 68, 68);   /* RGB 444444 */
+    background-color: #a7cece;
+    border: 1px dotted #fff;  /* witte stippellijn */
+}
+
+/* Footer: helft van de algemene lettergrootte */
+footer {
+    clear: both;
+    font-size: 0.6em;
+    text-align: center;
+    padding: 20px;
+}
